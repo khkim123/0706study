@@ -177,6 +177,46 @@ footer {
     color: #666;
 }
 
+.support-section {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.support-text {
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-size: 1.1em;
+}
+
+.bmc-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #FFDD00;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bmc-button:hover {
+    background-color: #FFED4A;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.bmc-button img {
+    height: 28px;
+    width: 28px;
+    margin-right: 10px;
+}
+
+.bmc-button span {
+    font-size: 16px;
+}
+
 /* 반응형 디자인 */
 @media (max-width: 768px) {
     header h1 {
@@ -205,5 +245,23 @@ footer {
     
     .buttons {
         gap: 15px;
+    }
+    
+    .support-text {
+        font-size: 1em;
+        padding: 0 20px;
+    }
+    
+    .bmc-button {
+        padding: 6px 16px;
+    }
+    
+    .bmc-button img {
+        height: 24px;
+        width: 24px;
+    }
+    
+    .bmc-button span {
+        font-size: 14px;
     }
 } 
