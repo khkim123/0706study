@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    color: #2c3e50;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #34495e;
+}
+
+.container {
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.quote-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.quote-box:hover {
+    transform: translateY(-5px);
+}
+
+.quote-icon {
+    font-size: 2em;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+.quote-text {
+    margin-bottom: 20px;
+}
+
+.quote-text p {
+    font-size: 24px;
+    line-height: 1.6;
+    font-weight: 700;
+    color: #333;
+}
+
+.quote-author {
+    margin-bottom: 30px;
+}
+
+.quote-author p {
+    font-size: 18px;
+    color: #666;
+    font-style: italic;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.primary-btn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.primary-btn:hover {
+    background-color: #357abd;
+}
+
+.share-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.share-btn, .copy-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+.twitter {
+    background-color: #1DA1F2;
+    color: white;
+}
+
+.facebook {
+    background-color: #4267B2;
+    color: white;
+}
+
+.copy-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+.share-btn:hover, .copy-btn:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: #2c3e50;
+}
+
+.footer-links {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-link {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #357abd;
+}
+
+.copyright {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    .subtitle {
+        font-size: 1em;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    .quote-box {
+        padding: 25px;
+    }
+    
+    .quote-text p {
+        font-size: 20px;
+    }
+    
+    .quote-author p {
+        font-size: 16px;
+    }
+    
+    .buttons {
+        gap: 15px;
+    }
+} 
